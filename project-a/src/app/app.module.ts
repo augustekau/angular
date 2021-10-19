@@ -11,9 +11,10 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatTableModule } from '@angular/material/table';
+import { ProductTableComponent } from './product-table/product-table.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ProductTableComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
