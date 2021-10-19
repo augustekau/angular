@@ -1,23 +1,38 @@
 import { Component } from '@angular/core';
 
-export interface PeriodicElement {
+export interface ProductTable {
+  id: number;
   name: string;
-  position: number;
-  weight: number;
-  symbol: string;
+  price: number;
+  description: string;
+  photo: string;
 }
 
-const ELEMENT_DATA: PeriodicElement[] = [
-  { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
-  { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
-  { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
-  { position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },
-  { position: 5, name: 'Boron', weight: 10.811, symbol: 'B' },
-  { position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C' },
-  { position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N' },
-  { position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O' },
-  { position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F' },
-  { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
+const ELEMENT_DATA: ProductTable[] = [
+  {
+    id: 1,
+    name: 'Phone XL',
+    price: 799,
+    description: 'A large phone with one of the best screens',
+    photo:
+      'https://www.egnetas.lt/wp-content/uploads/2021/09/Apple-iPhone-13-Pro-Max-Silver-ismanusis-telefonas.jpg',
+  },
+  {
+    id: 2,
+    name: 'Phone Mini',
+    price: 699,
+    description: 'A great phone with one of the best cameras',
+    photo:
+      'https://www.varle.lt/static/uploads/products/26/app/apple-iphone-13-512gb-rozine.jpg',
+  },
+  {
+    id: 3,
+    name: 'Phone Standard',
+    price: 299,
+    description: '',
+    photo:
+      'https://www.varle.lt/static/uploads/products/28/app/apple-iphone-13-128gb-blue.jpg',
+  },
 ];
 
 @Component({
@@ -27,6 +42,6 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class AppComponent {
   title = 'project-a';
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  displayedColumns: string[] = ['id', 'name', 'price', 'description', 'photo'];
   dataSource = ELEMENT_DATA;
 }
