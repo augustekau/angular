@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-// import { AfterViewInit, ViewChild } from '@angular/core';
-// import { MatSort } from '@angular/material/sort';
-// import { MatTableDataSource } from '@angular/material/table';
+import { AfterViewInit, ViewChild } from '@angular/core';
+import { MatSort } from '@angular/material/sort';
+import { MatTableDataSource } from '@angular/material/table';
 
 export interface ProductTable {
   id: number;
@@ -43,14 +43,15 @@ const ELEMENT_DATA: ProductTable[] = [
   templateUrl: './product-table.component.html',
   styleUrls: ['./product-table.component.scss'],
 })
-export class ProductTableComponent {
+export class ProductTableComponent implements AfterViewInit {
   title = 'project-a';
   displayedColumns: string[] = ['id', 'name', 'price', 'description', 'photo'];
-  dataSource = ELEMENT_DATA;
+  dataSource = new MatTableDataSource(ELEMENT_DATA);
 
   // @ViewChild(MatSort) sort: MatSort;
+  @ViewChild(MatSort, { static: false }) sort!: MatSort;
 
-  // ngAfterViewInit() {
-  //   this.dataSource.sort = this.sort;
-  // }
+  ngAfterViewInit() {
+    this.dataSource.sort = this.sort;
+  }
 }

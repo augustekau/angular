@@ -14,9 +14,15 @@ import { MatTableModule } from '@angular/material/table';
 import { ProductTableComponent } from './product-table/product-table.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
-  declarations: [AppComponent, ProductTableComponent, ContactFormComponent, AboutUsComponent],
+  declarations: [
+    AppComponent,
+    ProductTableComponent,
+    ContactFormComponent,
+    AboutUsComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -27,6 +33,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
     MatCheckboxModule,
     MatSlideToggleModule,
     MatTableModule,
+    MatSortModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
