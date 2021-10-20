@@ -12,9 +12,11 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatTableModule } from '@angular/material/table';
 import { ProductTableComponent } from './product-table/product-table.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
-  declarations: [AppComponent, ProductTableComponent],
+  declarations: [AppComponent, ProductTableComponent, ContactFormComponent, AboutUsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
