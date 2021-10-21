@@ -32,7 +32,7 @@ const ELEMENT_DATA: ProductTable[] = [
     id: 3,
     name: 'Phone Standard',
     price: 299,
-    description: '',
+    description: 'A great phone with one of the best cameras',
     photo:
       'https://www.varle.lt/static/uploads/products/28/app/apple-iphone-13-128gb-blue.jpg',
   },
@@ -45,7 +45,7 @@ const ELEMENT_DATA: ProductTable[] = [
 })
 export class ProductTableComponent implements AfterViewInit {
   title = 'project-a';
-  displayedColumns: string[] = ['id', 'name', 'price', 'description', 'photo'];
+  displayedColumns: string[] = ['id', 'photo', 'name', 'description', 'price'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 
   // @ViewChild(MatSort) sort: MatSort;

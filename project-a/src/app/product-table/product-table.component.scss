@@ -1,10 +1,15 @@
 .component-table {
-  width: 100%;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 200px;
+}
 table {
-  width: 100%;
+  width: 900px;
 }
 
 th.mat-sort-header-sorted {
