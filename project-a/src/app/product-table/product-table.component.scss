@@ -1,18 +1,17 @@
-// .component-table {
-//   margin-top: 50px;
-// }
-
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 200px;
-}
-table {
-  width: 900px;
-  max-width: 90%;
+  max-width: 100px;
 }
 
 th.mat-sort-header-sorted {
   color: black;
+}
+
+.view-button {
+  color: black;
+}
+.table-padding {
+  padding-right: 25px;
 }

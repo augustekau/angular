@@ -11,7 +11,13 @@ import { ELEMENT_DATA } from '../products';
 })
 export class ProductTableComponent implements AfterViewInit {
   title = 'project-a';
-  displayedColumns: string[] = ['id', 'photo', 'name', 'description', 'price'];
+  displayedColumns: string[] = [
+    'photo',
+    'name',
+    'description',
+    'price',
+    'button',
+  ];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 
   // @ViewChild(MatSort) sort: MatSort;

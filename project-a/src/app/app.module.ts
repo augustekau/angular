@@ -9,6 +9,7 @@ import { ProductTableComponent } from './product-table/product-table.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { HeaderComponent } from './header/header.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 // import modules
 import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
@@ -28,6 +29,7 @@ import { MatIconModule } from '@angular/material/icon';
     ContactFormComponent,
     AboutUsComponent,
     HeaderComponent,
+    ProductDetailsComponent,
   ],
   imports: [
     BrowserModule,
